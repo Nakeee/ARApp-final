@@ -12,7 +12,7 @@
     <body style="margin: 0; overflow: hidden;">
         <a-scene
             embedded
-                 vr-mode-ui="enabled: false"
+            vr-mode-ui="enabled: false"
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
@@ -20,16 +20,16 @@
                     src="assets/Eastern Gateway.png"
                     look-at="[gps-camera]"
                     scale="3 1 1"
-                    gps-entity-place="latitude: 51.591202; longitude: -0.298085;"
+                    gps-projected-entity-place="latitude: 51.591202; longitude: -0.298085;"
                 ></a-image>
             <a-image
                     src="assets/Lecture Centre.png"
                     look-at="[gps-camera]"
                     scale="3 1 1"
-                    gps-entity-place="latitude: 51.591092; longitude: -0.297644;"
+                    gps-projected-entity-place="latitude: 51.591092; longitude: -0.297644;"
                 ></a-image>
 
-            <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader></a-camera>
+            <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-projected-camera='gpsMinDistance: 5' rotation-reader></a-camera>
         </a-scene>
     </body>
 </html>
