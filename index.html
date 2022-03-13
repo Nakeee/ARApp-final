@@ -12,7 +12,6 @@
     <body style="margin: 0; overflow: hidden;">
         <a-scene
             embedded
-            vr-mode-ui="enabled: false"
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
@@ -22,6 +21,12 @@
                     scale="2 1 1"
                     position="0 30 0"
                     gps-entity-place="latitude: 51.591202; longitude: -0.298085;"
+                ></a-image>
+            <a-image
+                    src="assets/Lecture Centre.png"
+                    look-at="[gps-camera]"
+                    scale="2 1 1"
+                    gps-entity-place="latitude: 51.591092; longitude: -0.297644;"
                 ></a-image>
 
             <a-camera gps-camera rotation-reader></a-camera>
